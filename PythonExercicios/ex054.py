@@ -1,0 +1,1 @@
+#ler 7 pessoas e dizer se são maiores de idade = 21 anos
