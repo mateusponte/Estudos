@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Desafio 5</title>
+
+	<script type="text/javascript">
+
+		var objetos = Array('Cadeira','Impressora','Garfo')
+
+		function adicionaObjetos(){
+			var valor = document.getElementById('adiciona').value
+			if (valor ==''){
+				alert('Informe um valor válido')
+			} else if(objetos.indexOf(valor)!== -1){
+				alert('Elementos já existe')
+
+			} else{
+				objetos.push(valor)
+				console.log(objetos)
+				document.getElementById('adiciona').value=''
+			}
+
+
+		}
+
+
+		function ordenaObjetos(){
+
+			objetos.sort()
+			console.log(objetos)
+		}
+
+
+	</script>
+</head>
+<body>
+
+
+	<input type="text" name="" id="adiciona">
+	<span><button onclick="adicionaObjetos()">Adicionar</button>
+		<button onclick="ordenaObjetos()">Ordenar</button>
+	</span>
+
+
+</body>
+</html>

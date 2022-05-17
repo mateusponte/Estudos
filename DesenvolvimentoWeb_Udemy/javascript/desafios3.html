@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Desafio 3</title>
+
+	<script type="text/javascript">
+
+
+		var nome=prompt('Digite seu nome: ')
+		var altura=prompt('Digite sua altura em centímetros: ')
+		var peso=prompt('Digite seu peso em kg: ')
+
+		altura = parseFloat(altura)
+		peso = parseFloat(peso)
+
+		altura = altura / 100;
+
+		var imc = (peso/(altura*altura))
+
+		// algum erro nos laços. ver depois 
+
+
+		if (imc < 16 ){
+			alert('Olá, ' + nome + 'IMC' + imc + ' - baixo peso muito grave')
+		} else if(imc >= 16 && imc <= 16.99){
+			alert('Olá, ' + nome + 'IMC ' + imc + ' - baixo peso grave')
+		} else if(imc >= 17 && imc <= 18.49){
+			alert('Olá, ' + nome + 'IMC ' + imc + ' - baixo peso')
+		} else if(imc >= 18.50 && imc <= 24.99){
+			alert('Olá, ' + nome + 'IMC ' + imc + ' - peso normal')
+		} else if(imc >= 25 && imc <= 29.99){
+			alert('Olá, ' + nome + 'IMC ' + imc + ' - sobrepeso')
+		} else if(imc >= 30 && imc <= 34.99){
+			alert('Olá, ' + nome + 'IMC ' + imc + ' - Obesidade I')
+		} else if(imc >= 35 && imc <= 39.99){
+			alert('Olá, ' + nome + 'IMC ' + imc + ' - Obesidade II')
+		} else{
+			alert('Olá, ' + nome + 'IMC ' + imc +	 ' - Obesidade III')
+		}
+
+
+
+
+
+
+
+
+
+	</script>
+
+</head>
+<body>
+
+</body>
+</html>

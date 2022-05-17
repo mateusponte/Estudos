@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang = "pt-br">
+    <head>
+        <meta charset = "utf-8"
+
+
+        <link rel="stylesheet" type="text/css" href="css/estilo.css">
+
+        <script src = "jogo.js"></script>
+    </head>
+    
+    <body onresize="ajustaTamanhoPalcoJogo()">
+
+        <div class="painel">
+            <div class="vidas">
+                <img src:"imagens/coracao_vazio.png"/>
+                <img src:"imagens/coracao_cheio.png"/>
+                <img src="imagens/coracao_cheio.png"/>
+                
+            </div>
+
+            <div class="cronometro">
+                Tempo Restante: 
+            </div>
+
+        </div>
+
+        <script>
+            setInterval(function(){
+                posicaoRandomica()
+            },1000)
+        </script>
+  
+       
+    
+    </body>
+
+</html>

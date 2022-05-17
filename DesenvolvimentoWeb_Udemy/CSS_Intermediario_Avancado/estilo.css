@@ -1,0 +1,23 @@
+ul {
+	margin:  0;
+	padding:  0;
+	
+
+}
+}
+ul a {
+	border: red solid 1px;
+	height:  40px;
+	width: 300px;
+	display: block;
+	text-decoration: none;
+	text-indent: 40px;
+	line-height: 40px;
+	background: #f7b600 url(menu.png) no-repeat left bottom;
+}
+
+a:hover .selecionado a {
+	background-position: right bottom;
+	background-color: #f99200;
+	color: #fff;
+}

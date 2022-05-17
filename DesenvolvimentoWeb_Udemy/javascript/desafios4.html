@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+
+	<script type="text/javascript">
+		
+		var num1 =prompt('Digite um número: ')
+		var num2 =prompt('Digite outro número: ')
+		var operacao =prompt('Digite a operação [soma/subtração]: ')
+
+
+		num1 = parseFloat(num1)
+		num2 = parseFloat(num2)
+
+
+		function opera(num1, num2, operacao){
+			if (operacao =='soma'){
+				var soma = num1 + num2
+				return soma
+			} else{
+				var sub = num1 - num2
+				return sub
+			}
+		}
+
+		resultado = opera(num1,num2, operacao)
+
+		alert('O resultado é: ' + resultado)
+
+
+
+
+	</script>
+</head>
+<body>
+
+</body>
+</html>
